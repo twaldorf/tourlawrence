@@ -1,0 +1,28 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+nav {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: #404040;
+}
+header {
+  text-align: center;
+  margin: auto;
+}
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+.video {
+  border: 1px solid #404040;
+}
