@@ -1,5 +1,6 @@
 @bgcolor: #ffffff;
 @textcolor: #404040;
+@grey: #e8e8e8;
 
 @yellow: #ffdc00;
 @green: #6cb43f;
@@ -17,6 +18,13 @@ body {
 nav {
   font-size: 2rem;
   padding-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  a {
+    margin: 0 1rem 0 0;
+    display:inline-block;
+  }
 }
 
 h1, h2, h3, h4, h5, p {
@@ -24,8 +32,14 @@ h1, h2, h3, h4, h5, p {
 }
 
 header {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
   margin: auto;
+  p {
+    max-width: 24rem;
+  }
 }
 
 .hidden{
