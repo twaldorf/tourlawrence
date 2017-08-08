@@ -1,13 +1,12 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
-var concat = require('gulp-concat');
 var deploy      = require('gulp-gh-pages');
 
 gulp.task('css', function() {
-  gulp.src('css/less/[^_]*.less')
+  gulp.src('css/less/*.less')
     .pipe(less())
     .pipe(gulp.dest('css/'))
-    console.log('piping!')
+    console.log('piping!');
 })
 
 gulp.task('watch', function() {
@@ -15,9 +14,9 @@ gulp.task('watch', function() {
     console.log('watching!');
 });
 
-gulp.task('default', ['watch'])
+gulp.task('default', ['watch']);
 
 gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
+  return gulp.src("./**/*")
     .pipe(deploy())
 });
