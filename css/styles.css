@@ -19,10 +19,53 @@ header {
   text-align: center;
   margin: auto;
 }
+.hidden {
+  display: none;
+}
 .container {
   max-width: 80%;
   margin: auto;
 }
 .video {
   border: 1px solid #404040;
+}
+label {
+  float: left;
+}
+.hexagon {
+  position: relative;
+  float: left;
+  width: 150px;
+  height: 86.60px;
+  background-color: #6aa5af;
+  margin: 80.30px 0;
+  transform: translateY(2rem);
+  color: white;
+  font-size: 4rem;
+}
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+}
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 43.3px solid #6aa5af;
+}
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 43.3px solid #6aa5af;
+}
+.left {
+  transform: translateX(3rem);
+}
+.left.far {
+  transform: translateX(9rem);
+}
+.right {
+  transform: translateX(-3rem);
 }
