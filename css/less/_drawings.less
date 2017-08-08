@@ -3,7 +3,7 @@
   float: left;
   width: 150px;
   height: 86.60px;
-  background-color: @ocean;
+  background-color: @grey;
   margin: 80.30px 0;
   transform: translateY(2rem);
   color: white;
@@ -21,22 +21,31 @@
 
 .hexagon:before {
   bottom: 100%;
-  border-bottom: 43.30px solid @ocean;
+  border-bottom: 43.30px solid @grey;
 }
 
 .hexagon:after {
   top: 100%;
   width: 0;
-  border-top: 43.30px solid @ocean;
+  border-top: 43.30px solid @grey;
 }
 
-.left {
-  transform: translateX(3rem);
-  &.far {
-    transform: translateX(9rem);
+.test{}
+
+.comb-transform {
+  transition: all .300s ease;
+  &.alt {
+    transform: translateX(5rem);
+  }
+  &.active {
+    transform: translateY(-16rem) translateX(5rem) scale(.7)
   }
 }
 
-.right {
-  transform: translateX(-3rem;)
+.line {
+  border: 1px solid #ededed;
+  border-bottom: none;
+  &.top {
+    margin-bottom: 3rem;
+  }
 }
