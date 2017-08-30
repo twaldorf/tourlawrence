@@ -4,9 +4,8 @@
 }
 
 section {
-  width: 100%;
+  width: 80%;
   display: flex;
-  flex-direction: row;
   transition: all .3s ease;
   &.active {
     margin-top: 10rem;
@@ -21,14 +20,20 @@ main {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content:center;
   margin: auto;
 }
 
 .comb {
   display: inline;
-  h2 {
-    transform: translateX(12rem) translateY(-7rem);
+  h2 {transition: .3s all ease;}
+  &.alt {
+    h2 { transform: translateX(-10rem) translateY(10rem); }
+    &.active {
+      h2 { transform: translateX(-5rem) translateY(10rem); }
+    }
   }
+  h2 { transform: translateX(-5rem) translateY(10rem); }
 }
 
 .rear {
