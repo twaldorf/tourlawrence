@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Path: Tour Lawrence</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="/"><h1 class="di">The Path</h1></a>
+        <nav class="di">
+          <a href="#">Organize a Tour</a>
+          <a href="#">About</a><a href="#">Trail Check-In</a>
+          <a href="#">About</a>
+          <label for="menu" aria-hidden="false" class="hidden">Menu</label>
+        </nav>
+        <hr class="space">
+        <h3>The Fall of the Pemberton Mill</h3>
+        <p>The Path is an award-winning interactive tour about Lawrence MA that uses sleek signs and online videos to tell the tale of two sisters who were caught in the largest industrial disaster in Massachusetts history.</p>
+      </header>
+      <main>
+        <a-scene embedded arjs='trackingMethod: best;'>
+          <a-box position='0 0 0.5' material='opacity: 0.5;'></a-box>
+	        <a-marker-camera preset='hiro'></a-marker-camera>
+        </a-scene>
+      </main>
+    </div>
+  </body>
+</html>
