@@ -27,10 +27,9 @@ nav a:first-of-type {
   margin: 0 2rem 0 4rem;
 }
 nav a:hover {
-  box-shadow: inset 0 -0.3em 0 0 rgba(108, 180, 63, 0.36);
+  box-shadow: inset 0 -0.4em 0 0 rgba(108, 180, 63, 0.36);
   outline: none;
   border: none;
-  color: #6cb43f;
 }
 nav a::selection {
   color: #cf381e;
