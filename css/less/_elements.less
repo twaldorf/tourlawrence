@@ -90,7 +90,7 @@ section:not(:first-of-type) {
   transition: all .3s ease;
   transform: translateX(5rem);
   &.alt {
-    transform: translateX(10rem);
+    transform: translateX(12.5rem);
   }
   &.active {
     transform: translateY(2rem) translateX(-6rem) scale(0.7);
@@ -104,4 +104,18 @@ section:not(:first-of-type) {
 
 .fore {
   z-index: 1;
+}
+
+footer {
+  nav {padding: 0}
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top: 1px solid @grey;
+  .icon {
+    max-width:3rem;
+  }
 }
