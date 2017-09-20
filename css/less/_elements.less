@@ -1,12 +1,14 @@
 .container {
-  max-width: 80%;
+  padding: 0 12.5%;
   margin: auto;
 }
 
 section {
-  width: 80%;
+  position: relative;
+  // width: 80%;
   display: flex;
   transition: all .3s ease;
+  margin: 0;
   &.active {
     margin-top: 10rem;
   }
@@ -19,12 +21,31 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content:center;
   margin: auto;
 }
 
+.desc {
+  max-width: 50%;
+  // MQ insert
+}
+
 .comb {
+  img {
+    float: right;
+    max-width: 150px;
+    filter: grayscale(100%);
+    .ts;
+    &:hover {
+      filter: grayscale(0%);
+      max-width: 155px;
+      margin-top:-6px;
+    }
+    &:active {
+      filter: grayscale(0%);
+    }
+  }
   display: inline;
   h2 {transition: .3s all ease;}
   &.alt {
@@ -36,20 +57,21 @@ main {
   h2 { transform: translateX(-5rem) translateY(10rem); }
 }
 
+.comb-transform {
+  transition: all .300s ease;
+  transform: translateX(5rem);
+  &.alt {
+    transform: translateX(10rem);
+  }
+  &.active {
+    transform: translateY(-16rem) translateX(5rem) scale(.7)
+  }
+}
+
 .rear {
   z-index: -1;
 }
 
 .fore {
   z-index: 1;
-}
-
-.comb-container {
-  max-width: 90%;
-  display: inline;
-}
-
-
-.comb-element {
-
 }

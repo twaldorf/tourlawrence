@@ -29,17 +29,15 @@ nav {
   padding-top: 2rem;
   vertical-align: super;
   a {
-    &:first-of-type{
-      margin: 0 2rem 0 4rem;
-    }
-
     color: @textcolor;
     text-decoration: none;
     font-style: normal;
-
-    // display:inline-block;
-    margin: 0 2rem;
-
+    &:not(:first-of-type) {
+      margin: 0 3rem;
+      &:not(:last-of-type) {
+        margin: 0 0 0 3rem;
+      }
+    }
     border-bottom: 1px solid @textcolor;
     transition: all .13s linear;
     &:hover{
@@ -59,14 +57,38 @@ h1, h2, h3, h4, h5{
 }
 
 header {
-  margin: 4rem 0;
-  h1{
-    border-right: 1px solid @textcolor;
-    padding-right: 4rem}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  div.logo {
+    flex-shrink: 0;
+    flex-basis:50%;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+  h1 {
+    font-weight: bold;
+  }
+  h4 {
+    top: 20px;
+    left: -8rem;
+    position: relative;
+  }
   p {
     max-width: 24rem;
   }
+  nav{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
 }
+
+.yellow {
+  color: @yellow;
+}
+&.bold {font-weight: bold; margin-right: 2px;}
 
 .flex{
   display:flex;
@@ -78,7 +100,9 @@ header {
 
 @import "_elements.less";
 @import "_drawings.less";
+@import "_figures.less";
 
 
 .di {display: inline;}
 .space {border: none; margin: 4rem;}
+.ts {transition: all .23s ease}
