@@ -1,0 +1,39 @@
+.hexagon {
+  position: relative;
+  float: left;
+  width: 150px;
+  height: 86.60px;
+  background-color: @grey;
+  margin: 80.30px 0;
+  transform: translateY(2rem);
+  color: white;
+  font-size: 4rem;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 43.30px solid @grey;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 43.30px solid @grey;
+}
+
+.line {
+  border: 1px solid #ededed;
+  border-bottom: none;
+  &.top {
+    margin-bottom: 3rem;
+  }
+}

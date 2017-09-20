@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Path: Tour Lawrence</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+        <a href="./index.html">
+          <img src="./img/logo.svg" alt="The Path" class="icon logo">
+          <h1 class="di">The Path</h1>
+          <h4 class="di"><span class="yellow bold">>></span>tourlawrence.org</h4>
+        </a>
+        </div>
+        <nav class="">
+          <a href="./tour.html">Organize a Tour</a>
+          <a href="./checkin.html">Trail Check-In</a>
+          <a href="./about.html">About</a>
+          <label for="menu" aria-hidden="false" class="hidden">Menu</label>
+        </nav>
+      </header>
+      <main>
+        <a-scene embedded arjs='trackingMethod: best;'>
+          <a-box position='0 0 0.5' material='opacity: 0.5;'></a-box>
+	        <a-marker-camera preset='hiro'></a-marker-camera>
+        </a-scene>
+      </main>
+    </div>
+  </body>
+</html>
