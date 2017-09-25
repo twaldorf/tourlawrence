@@ -1,6 +1,9 @@
 .container {
   padding: 0 12.5%;
   margin: auto;
+  @media (min-height: 680px), screen and (orientation: portrait) {
+    padding: 0 5.5%;
+  }
 }
 
 section {
@@ -28,7 +31,9 @@ main {
 
 .desc {
   max-width: 50%;
-  // MQ insert
+  @media (min-height: 680px), screen and (orientation: portrait) {
+    max-width:100%;
+  }
 }
 
 section:not(:first-of-type) {
