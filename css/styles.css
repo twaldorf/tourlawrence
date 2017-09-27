@@ -6,9 +6,9 @@ body {
   font-weight: 300;
   color: #282828;
 }
-@media (min-height: 680px), screen and (orientation: portrait) {
+@media (max-height: 680px), screen and (orientation: portrait) {
   body {
-    font-size: 44px;
+    font-size: 24px;
   }
 }
 a {
@@ -59,7 +59,7 @@ nav a:not(:first-of-type) {
 nav a:not(:first-of-type):not(:last-of-type) {
   margin: 0 0 0 3rem;
 }
-@media (min-height: 680px), screen and (orientation: portrait) {
+@media (max-height: 680px), screen and (orientation: portrait) {
   nav a:not(:first-of-type) {
     margin: 3rem 0;
   }
@@ -110,7 +110,7 @@ header nav {
   align-items: center;
   flex-shrink: 0;
 }
-@media (min-height: 680px), screen and (orientation: portrait) {
+@media (max-height: 680px), screen and (orientation: portrait) {
   header div.logo {
     flex-wrap: wrap;
     flex-direction: column;
@@ -137,11 +137,6 @@ header nav {
   padding: 0 12.5%;
   margin: auto;
 }
-@media (min-height: 680px), screen and (orientation: portrait) {
-  .container {
-    padding: 0 5.5%;
-  }
-}
 section {
   position: relative;
   display: flex;
@@ -160,7 +155,7 @@ main {
 .desc {
   max-width: 50%;
 }
-@media (min-height: 680px), screen and (orientation: portrait) {
+@media (max-height: 680px), screen and (orientation: portrait) {
   .desc {
     max-width: 100%;
   }
@@ -212,6 +207,11 @@ section:not(:first-of-type).active {
   width: 100%;
   height: 310px;
 }
+@media (max-height: 680px), screen and (orientation: portrait) {
+  .comb-container {
+    margin: auto;
+  }
+}
 .comb-transform {
   transition: all .3s ease;
   transform: translateX(5rem);
@@ -222,6 +222,17 @@ section:not(:first-of-type).active {
 .comb-transform.active {
   transform: translateY(2rem) translateX(-6rem) scale(0.7);
   margin-top: -3rem;
+}
+@media (max-height: 680px), screen and (orientation: portrait) {
+  .comb-transform {
+    transform: none;
+  }
+  .comb-transform.alt {
+    transform: none;
+  }
+  .comb-transform.active {
+    transform: none;
+  }
 }
 .rear {
   z-index: -1;
@@ -240,6 +251,19 @@ footer {
 }
 footer nav {
   padding: 0;
+}
+@media (max-height: 680px), screen and (orientation: portrait) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer nav {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  footer nav a {
+    display: block;
+  }
 }
 footer .icon {
   max-width: 3rem;
@@ -282,7 +306,7 @@ footer .icon {
 .icon {
   max-width: 5rem;
 }
-@media (min-height: 680px), screen and (orientation: portrait) {
+@media (max-height: 680px), screen and (orientation: portrait) {
   .icon {
     max-width: 25%;
   }

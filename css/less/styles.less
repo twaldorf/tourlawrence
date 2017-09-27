@@ -17,8 +17,8 @@ body {
   font-family: Museo, 'serif';
   font-weight: 300;
   color: @textcolor;
-  @media (min-height: 680px), screen and (orientation: portrait) {
-    font-size:44px;
+  @media (max-height: 680px), screen and (orientation: portrait) {
+    font-size:24px;
   }
 }
 
@@ -66,7 +66,7 @@ nav {
         margin: 0 0 0 3rem;
       }
     }
-    @media (min-height: 680px), screen and (orientation: portrait) {
+    @media (max-height: 680px), screen and (orientation: portrait) {
       &:not(:first-of-type) {
         margin: 3rem 0;
         &:not(:last-of-type) {
@@ -84,7 +84,7 @@ nav {
       color: @activecolor;
     }
   }
-  @media (min-height: 680px), screen and (orientation: portrait) {
+  @media (max-height: 680px), screen and (orientation: portrait) {
 
   }
 }
@@ -121,7 +121,7 @@ header {
     flex-shrink: 0;
 
   }
-  @media (min-height: 680px), screen and (orientation: portrait) {
+  @media (max-height: 680px), screen and (orientation: portrait) {
     div.logo{
       flex-wrap:wrap;
       flex-direction: column;
