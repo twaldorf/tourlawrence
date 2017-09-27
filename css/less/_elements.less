@@ -163,5 +163,12 @@ footer {
   }
   .icon {
     max-width:3rem;
+    &.fb{max-width:2.2rem;
+    padding: .5rem;}
+    @media (max-height: 680px), screen and (orientation: portrait) {
+      max-width:9rem;
+      &.fb{max-width:7rem;
+      padding: 1rem;}
+    }
   }
 }

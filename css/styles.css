@@ -133,6 +133,8 @@ header nav {
   header div.logo {
     flex-wrap: wrap;
     flex-direction: column;
+    flex-basis: auto;
+    overflow: hidden;
   }
   header nav {
     flex-direction: column;
@@ -307,6 +309,19 @@ footer nav {
 }
 footer .icon {
   max-width: 3rem;
+}
+footer .icon.fb {
+  max-width: 2.2rem;
+  padding: .5rem;
+}
+@media (max-height: 680px), screen and (orientation: portrait) {
+  footer .icon {
+    max-width: 9rem;
+  }
+  footer .icon.fb {
+    max-width: 7rem;
+    padding: 1rem;
+  }
 }
 .hexagon {
   position: relative;
