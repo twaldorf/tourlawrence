@@ -40,6 +40,14 @@ section:not(:first-of-type) {
   &.active {
     margin: -1rem 0 2rem 0;
   }
+  @media (max-height: 680px), screen and (orientation: portrait) {
+    .comb {
+      margin: 0;
+    }
+    &.active {
+      margin: 0;
+    }
+  }
 }
 
 .comb {
@@ -57,6 +65,18 @@ section:not(:first-of-type) {
     h2 { transform: translateX(11rem) translateY(7.5rem); }
     &.active {
       h2 { transform: translateX(11rem) translateY(8rem); }
+    }
+  }
+  @media (max-height: 680px), screen and (orientation: portrait) {
+    h2 {
+      transform: translateX(14rem) translateY(11rem);
+      max-width: 90%;
+    }
+    &.alt {
+      h2 { transform: translateX(14rem) translateY(11rem); }
+      &.active {
+        h2 { transform: translateX(14rem) translateY(11rem); }
+      }
     }
   }
 
@@ -108,7 +128,7 @@ section:not(:first-of-type) {
     }
     &.active {
       transform: none;
-      // margin-top:-3rem;
+      margin-top: 0rem;
     }
   }
 }

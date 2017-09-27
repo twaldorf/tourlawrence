@@ -18,7 +18,7 @@ body {
   font-weight: 300;
   color: @textcolor;
   @media (max-height: 680px), screen and (orientation: portrait) {
-    font-size:24px;
+    font-size:44px;
   }
 }
 
@@ -117,6 +117,10 @@ header {
     top: 20px;
     left: -8rem;
     position: relative;
+    @media (max-height: 680px), screen and (orientation: portrait) {
+      top: 48px;
+      left: -18rem;
+    }
   }
   p {
     max-width: 24rem;
@@ -170,4 +174,10 @@ header {
 ul {list-style: none;}
 li {
   display: inline;
+}
+
+.mobile-hide {
+  @media (max-width: 680px), screen and (orientation: portrait) {
+    display:none;
+  }
 }

@@ -8,7 +8,7 @@ body {
 }
 @media (max-height: 680px), screen and (orientation: portrait) {
   body {
-    font-size: 24px;
+    font-size: 44px;
   }
 }
 a {
@@ -115,6 +115,12 @@ header h4 {
   left: -8rem;
   position: relative;
 }
+@media (max-height: 680px), screen and (orientation: portrait) {
+  header h4 {
+    top: 48px;
+    left: -18rem;
+  }
+}
 header p {
   max-width: 24rem;
 }
@@ -179,6 +185,14 @@ section:not(:first-of-type) .comb {
 section:not(:first-of-type).active {
   margin: -1rem 0 2rem 0;
 }
+@media (max-height: 680px), screen and (orientation: portrait) {
+  section:not(:first-of-type) .comb {
+    margin: 0;
+  }
+  section:not(:first-of-type).active {
+    margin: 0;
+  }
+}
 .comb {
   display: inline;
 }
@@ -196,6 +210,18 @@ section:not(:first-of-type).active {
 }
 .comb.alt.active h2 {
   transform: translateX(11rem) translateY(8rem);
+}
+@media (max-height: 680px), screen and (orientation: portrait) {
+  .comb h2 {
+    transform: translateX(14rem) translateY(11rem);
+    max-width: 90%;
+  }
+  .comb.alt h2 {
+    transform: translateX(14rem) translateY(11rem);
+  }
+  .comb.alt.active h2 {
+    transform: translateX(14rem) translateY(11rem);
+  }
 }
 .comb:hover {
   cursor: pointer;
@@ -245,6 +271,7 @@ section:not(:first-of-type).active {
   }
   .comb-transform.active {
     transform: none;
+    margin-top: 0rem;
   }
 }
 .rear {
@@ -354,4 +381,9 @@ ul {
 }
 li {
   display: inline;
+}
+@media (max-width: 680px), screen and (orientation: portrait) {
+  .mobile-hide {
+    display: none;
+  }
 }
