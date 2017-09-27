@@ -34,6 +34,9 @@ a {
   }
   p {margin-top:0;}
   ul {padding: 0; margin:0}
+  h3 {
+    margin-top: 4rem;
+  }
   .column-list {
     display: flex;
     flex-direction: row;
@@ -42,7 +45,10 @@ a {
     align-items: baseline;
     li {
       width: 20%;
-      // MQ
+      @media (max-height: 700px), screen and (orientation: portrait) {
+        width:45%;
+      }
+
       margin: 1rem 2rem 0 0;
       font-weight: 500;
       p {
@@ -85,7 +91,7 @@ nav {
     }
   }
   @media (max-height: 680px), screen and (orientation: portrait) {
-
+    width: 100%;
   }
 }
 

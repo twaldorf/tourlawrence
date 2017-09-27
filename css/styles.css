@@ -26,6 +26,9 @@ a {
   padding: 0;
   margin: 0;
 }
+.paragraphs h3 {
+  margin-top: 4rem;
+}
 .paragraphs .column-list {
   display: flex;
   flex-direction: row;
@@ -37,6 +40,11 @@ a {
   width: 20%;
   margin: 1rem 2rem 0 0;
   font-weight: 500;
+}
+@media (max-height: 700px), screen and (orientation: portrait) {
+  .paragraphs .column-list li {
+    width: 45%;
+  }
 }
 .paragraphs .column-list li p {
   font-weight: 300;
@@ -74,6 +82,11 @@ nav a:hover {
 }
 nav a::selection {
   color: #cf381e;
+}
+@media (max-height: 680px), screen and (orientation: portrait) {
+  nav {
+    width: 100%;
+  }
 }
 h1,
 h2,
