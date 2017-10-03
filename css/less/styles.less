@@ -1,22 +1,30 @@
 @bgcolor: #ffffff;
 @textcolor: #282828;
 @grey: #e8e8e8;
-
 @yellow: #ffdc00;
 @green: #6cb43f;
 @ocean: #6aa5af;
 @red: #cf381e;
-
 @activecolor: @red;
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+
+@font-face {
+font-family: "TheSerif";
+src: url("TheSerif-LP7Bld.woff2") format('woff2');
+font-weight: normal;
+font-style: normal;
+font-feature-settings: "kern" 1 ,"liga" 1, "calt" 1, "locl" 1;
+}
+
+//please make a favicon
 
 
 body {
   padding: 0;
   margin: 0;
   background-color: @bgcolor;
-  font-family: 'Roboto Slab', 'Museo', 'serif';
-  font-weight: 400;
+  font-family: 'TheSerif', 'Museo', 'serif';
+  font-weight: 300;
+  font-variant-numeric: oldstyle-nums;
   color: @textcolor;
   @media (max-height: 680px), screen and (orientation: portrait) {
     font-size:44px;
